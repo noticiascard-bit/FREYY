@@ -2,20 +2,27 @@ FREYY
 
 Security Toolkit for Termux & Linux
 
-FREYY é um toolkit de segurança desenvolvido em Python para Termux e Linux, reunindo diferentes módulos de análise em uma interface de terminal única e organizada.
-
-Desenvolvido com foco em aprendizado, análise e testes autorizados em ambientes próprios ou com permissão.
+FREYY é um toolkit de segurança desenvolvido para Termux e Linux, reunindo ferramentas de análise, diagnóstico de rede, segurança web, vulnerabilidades, monitoramento e análise de arquivos em uma única interface de terminal.
 
 Features
 
-- OSINT
-- Network
-- Web Security
-- Vulnerability
-- Net Monitor
-- File Analyzer
-- APK Analyzer
-- Chat AI
+Module| Description
+OSINT| Coleta e análise de informações públicas
+NETWORK| Diagnóstico e análise de rede
+WEB SECURITY| Análise básica de segurança web
+VULNERABILITY| Verificações relacionadas a vulnerabilidades
+NET MONITOR| Monitoramento de conexões e rede
+FILE ANALYZER| Análise de arquivos
+FREYY TOOLS| Ferramentas adicionais, incluindo análise de APK
+CHAT AI| Assistente de IA integrado
+
+Requirements
+
+- Termux ou Debian/Ubuntu-based Linux
+- Internet connection during installation
+- Git
+
+O instalador configura automaticamente as principais dependências do projeto.
 
 Installation
 
@@ -23,46 +30,88 @@ Termux
 
 git clone https://github.com/noticiascard-bit/FREYY.git
 cd FREYY
-pkg update
-pkg install python git nmap
-python freyy.py
+./install.sh
+
+Depois da instalação:
+
+FREYY
 
 Linux
 
+Em sistemas Debian/Ubuntu:
+
 git clone https://github.com/noticiascard-bit/FREYY.git
 cd FREYY
-sudo apt update
-sudo apt install python3 git nmap
-python3 freyy.py
+./install.sh
+
+Depois:
+
+FREYY
+
+Usage
+
+Após a instalação, basta executar:
+
+FREYY
+
+O menu principal permite acessar os módulos disponíveis.
 
 Chat AI
 
-O Chat AI utiliza a API do Gemini.
+O FREYY possui um módulo de Chat AI integrado.
 
-Configure sua chave:
+Para utilizar o recurso, é necessário configurar uma chave de API do Google Gemini.
 
-export GEMINI_API_KEY="SUA_CHAVE_AQUI"
+A chave pode ser fornecida através da variável de ambiente:
 
-Nunca publique sua API key no GitHub.
+export GEMINI_API_KEY="SUA_CHAVE"
 
-Responsible Use
+Ou através do arquivo:
 
-Utilize o FREYY somente em sistemas, redes, aplicações e arquivos que você possui ou para os quais possui autorização para realizar testes.
+~/.freyy/gemini_api_key
 
-O projeto tem finalidade educacional e de análise de segurança.
+Nunca publique sua chave de API no GitHub.
+
+Project Structure
+
+FREYY/
+├── core/
+├── modules/
+├── utils/
+├── freyy.py
+├── install.sh
+├── requirements.txt
+└── README.md
+
+Testing
+
+O projeto possui testes para verificar partes importantes do toolkit.
+
+Para executar os testes disponíveis:
+
+python test_freyy.py
+
+Security & Responsible Use
+
+O FREYY foi desenvolvido para fins educacionais, de pesquisa e administração de sistemas.
+
+Use as ferramentas somente em sistemas, redes, aplicações e arquivos para os quais você possui autorização.
+
+Não utilize o projeto para acessar, interferir ou analisar sistemas de terceiros sem permissão.
 
 Project Status
 
-Development
+FREYY está em desenvolvimento ativo.
 
-O FREYY está em desenvolvimento e poderá receber novos recursos, melhorias e correções.
+Novos módulos, melhorias na interface e correções podem ser adicionados ao projeto ao longo do tempo.
 
 License
 
-Este projeto atualmente não possui uma licença open-source definida.
+Este projeto é distribuído sob a licença MIT.
 
 Author
 
 noticiascard-bit
 
-"GitHub" (https://github.com/noticiascard-bit/FREYY)
+GitHub:
+https://github.com/noticiascard-bit
