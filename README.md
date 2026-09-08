@@ -29,15 +29,43 @@ Installation
 
 Termux
 
+Clone o repositório:
+
 git clone https://github.com/noticiascard-bit/FREYY.git
+
+Entre na pasta:
+
 cd FREYY
+
+Execute o instalador:
+
 ./install.sh
 
-Depois da instalação:
+Após a instalação, execute:
 
 FREYY
 
 Debian / Ubuntu
+
+Clone o repositório:
+
+git clone https://github.com/noticiascard-bit/FREYY.git
+
+Entre na pasta:
+
+cd FREYY
+
+Execute o instalador:
+
+./install.sh
+
+Após a instalação:
+
+FREYY
+
+Instalação rápida
+
+No Termux ou Linux compatível:
 
 git clone https://github.com/noticiascard-bit/FREYY.git
 cd FREYY
@@ -46,6 +74,8 @@ cd FREYY
 Depois:
 
 FREYY
+
+«Termux: se o "pkg update" falhar durante a instalação, execute "termux-change-repo", escolha um espelho funcional para o repositório principal e execute "./install.sh" novamente.»
 
 Usage
 
@@ -113,4 +143,5 @@ Author
 noticiascard-bit
 
 GitHub:
+
 https://github.com/noticiascard-bit
