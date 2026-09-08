@@ -19,8 +19,9 @@ CHAT AI| Assistente de IA integrado
 Requirements
 
 - Termux ou Debian/Ubuntu-based Linux
-- Internet connection during installation
+- Python 3
 - Git
+- Conexão com a internet durante a instalação
 
 O instalador configura automaticamente as principais dependências do projeto.
 
@@ -36,9 +37,7 @@ Depois da instalação:
 
 FREYY
 
-Linux
-
-Em sistemas Debian/Ubuntu:
+Debian / Ubuntu
 
 git clone https://github.com/noticiascard-bit/FREYY.git
 cd FREYY
@@ -50,7 +49,7 @@ FREYY
 
 Usage
 
-Após a instalação, basta executar:
+Após a instalação, execute:
 
 FREYY
 
@@ -60,7 +59,7 @@ Chat AI
 
 O FREYY possui um módulo de Chat AI integrado.
 
-Para utilizar o recurso, é necessário configurar uma chave de API do Google Gemini.
+Para utilizar esse recurso, é necessário configurar uma chave de API do Google Gemini.
 
 A chave pode ser fornecida através da variável de ambiente:
 
@@ -93,9 +92,9 @@ python test_freyy.py
 
 Security & Responsible Use
 
-O FREYY foi desenvolvido para fins educacionais, de pesquisa e administração de sistemas.
+O FREYY foi desenvolvido para fins educacionais, pesquisa e administração de sistemas.
 
-Use as ferramentas somente em sistemas, redes, aplicações e arquivos para os quais você possui autorização.
+Utilize as ferramentas somente em sistemas, redes, aplicações e arquivos para os quais você possui autorização.
 
 Não utilize o projeto para acessar, interferir ou analisar sistemas de terceiros sem permissão.
 
@@ -107,7 +106,7 @@ Novos módulos, melhorias na interface e correções podem ser adicionados ao pr
 
 License
 
-Este projeto é distribuído sob a licença MIT.
+Este projeto ainda não possui uma licença open-source definida.
 
 Author
 
