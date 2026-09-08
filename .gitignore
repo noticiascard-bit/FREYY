@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+
+*.bak*
+
+FREYY_CONTEXT.txt
+
+*_patch.py
+redesign_ui.py
+gerar_contexto.sh
+gerar_contexto_completo.sh
+
+teste_gemini.py
+teste_gemini_rest.py
