@@ -1,76 +1,81 @@
 FREYY
 
-«Security Toolkit for Termux»
+Security Toolkit for Termux & Linux
 
-FREYY é um toolkit de segurança desenvolvido em Python para Termux, reunindo diferentes módulos de análise em uma interface de terminal única e organizada.
+FREYY é um toolkit de segurança desenvolvido em Python para Termux e Linux, reunindo diferentes módulos de análise em uma interface de terminal única e organizada.
+
+O projeto é desenvolvido principalmente para Termux, mas também pode funcionar em ambientes Linux com os requisitos necessários.
 
 O projeto foi desenvolvido com foco em aprendizado, análise e testes autorizados em ambientes próprios ou com permissão.
 
 ---
 
-✨ Features
+Features
 
 Module| Description
-🔎 OSINT| Ferramentas de coleta e análise de informações
-🌐 Network| Análise e diagnóstico de rede
-🛡️ Web Security| Recursos para análise de segurança web
-🔬 Vulnerability| Análise de possíveis vulnerabilidades
-📡 Net Monitor| Monitoramento de informações de rede
-📁 File Analyzer| Análise de arquivos
-📦 APK Analyzer| Análise de aplicações Android
-🤖 Chat AI| Integração com Gemini
+OSINT| Ferramentas de coleta e análise de informações
+Network| Análise e diagnóstico de rede
+Web Security| Recursos para análise de segurança web
+Vulnerability| Análise de possíveis vulnerabilidades
+Net Monitor| Monitoramento de informações de rede
+File Analyzer| Análise de arquivos
+APK Analyzer| Análise de aplicações Android
+Chat AI| Integração com Gemini
 
 ---
 
-📱 Requirements
+Requirements
 
-- Android
-- Termux
+- Android + Termux ou Linux
 - Python 3
 - Git
 - Nmap
 
 ---
 
-🚀 Installation
+Installation
 
-Clone o repositório:
+Clone o repositório e instale os requisitos:
 
 git clone https://github.com/noticiascard-bit/FREYY.git
 cd FREYY
 
-Instale os requisitos básicos:
-
+# Termux
 pkg update
 pkg install python git nmap
 
----
+# Linux Debian/Ubuntu
+sudo apt update
+sudo apt install python3 python3-pip git nmap
 
-▶️ Usage
+Depois execute:
 
-Execute o FREYY:
-
+# Termux
 python freyy.py
 
-O menu principal permite acessar os diferentes módulos disponíveis.
+# Linux
+python3 freyy.py
+
+«No Termux, execute os comandos da seção "Termux".
+No Linux, execute os comandos da seção "Linux Debian/Ubuntu".»
 
 ---
 
-🤖 Chat AI
+Chat AI
 
 O módulo Chat AI utiliza a API do Gemini.
 
-Para manter sua chave protegida, nunca coloque uma API key diretamente no código ou no GitHub.
+Para manter sua chave protegida, nunca coloque uma API key diretamente no código ou publique uma chave no GitHub.
 
-Você pode configurar a variável de ambiente:
+Configure a variável de ambiente:
 
 export GEMINI_API_KEY="SUA_CHAVE_AQUI"
 
-Ou utilizar o método de configuração de chave suportado pelo FREYY.
+Ou utilize o método de configuração de chave suportado pelo FREYY.
 
 ---
 
-📂 Project Structure
+Project Structure
 
 FREYY/
 ├── core/
@@ -99,11 +104,9 @@ FREYY/
 
 ---
 
-🧪 Testing
+Testing
 
 O projeto possui testes automatizados para diferentes partes do toolkit.
-
-Para executar os testes:
 
 python test_freyy.py
 
@@ -113,7 +116,7 @@ python test_modules.py
 
 ---
 
-🔐 Responsible Use
+Responsible Use
 
 FREYY deve ser utilizado somente em sistemas, redes, aplicações e arquivos que você possui ou para os quais possui autorização para realizar testes.
 
@@ -123,15 +126,15 @@ O usuário é responsável pela utilização da ferramenta.
 
 ---
 
-📌 Project Status
+Project Status
 
 Development
 
-O projeto está em desenvolvimento e novos recursos, melhorias e correções podem ser adicionados ao longo do tempo.
+O FREYY está em desenvolvimento. Novos recursos, melhorias e correções poderão ser adicionados ao longo do tempo.
 
 ---
 
-📄 License
+License
 
 Este projeto atualmente não possui uma licença open-source definida.
 
@@ -139,7 +142,7 @@ Uma licença poderá ser adicionada futuramente.
 
 ---
 
-👤 Author
+Author
 
 noticiascard-bit
 
